@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('admin.master')
 
-@section('content')
+@section('body')
     <div class="container">
         <h1>Edit Review for {{ $courses->course_title }}</h1>
         

@@ -12,7 +12,7 @@
                  <div class="col-xl-12 col-lg-12">
                      <div class="breadcrumb-wrap text-left">
                          <div class="breadcrumb-title">
-                             <h2>About Us</h2>    
+                             <h2>Về chúng tôi</h2>    
                              
                          </div>
                      </div>
@@ -21,8 +21,8 @@
                        
                          <nav aria-label="breadcrumb">
                              <ol class="breadcrumb">
-                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                 <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                 <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                                 <li class="breadcrumb-item active" aria-current="page">về chúng tôi</li>
                              </ol>
                          </nav>
                      </div>
@@ -49,17 +49,17 @@
              <div class="col-lg-6 col-md-12 col-sm-12">
                      <div class="about-content s-about-content pl-15 wow fadeInRight  animated" data-animation="fadeInRight" data-delay=".4s">
                          <div class="about-title second-title pb-25">  
-                             <h5><i class="fal fa-graduation-cap"></i> About Our University</h5>
-                             <h2>A Few Words About the University</h2>                                   
+                             <h5><i class="fal fa-graduation-cap"></i> Giới thiệu về trường đại học của chúng tôi</h5>
+                             <h2>Một vài lời về trường đại học</h2>                                   
                          </div>
-                            <p class="txt-clr">Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational.</p>
-                             <p>We are proud to offer top ranige in employment services such and asser payroll and benefits administrato managemen and asistance with global business range ployment employer  readings from religious texts or literature are also commonly inc compliance.</p>
+                            <p class="txt-clr">Cộng đồng của chúng tôi đang được kêu gọi tái hiện tương lai. Là trường đại học duy nhất có một trường thiết kế nổi tiếng kết hợp với các trường đại học hàng đầu, chúng tôi đang làm cho việc học trở nên phù hợp và mang tính chuyển đổi hơn.</p>
+                             <p>Chúng tôi tự hào cung cấp các dịch vụ việc làm hàng đầu như quản lý bảng lương và phúc lợi và hỗ trợ cho phạm vi kinh doanh toàn cầu, việc đọc các văn bản hoặc tài liệu tôn giáo cũng thường được bao gồm trong sự tuân thủ.</p>
                              <div class="about-content2">
                              <div class="row">
                              <div class="col-md-12">
                               <ul class="green2">                                              
-                                         <li><div class="abcontent"><div class="ano"><span>01</span></div> <div class="text"><h3>Doctoral Degrees</h3> <p>consectetur adipiscing elit sed do eiusmod tem incid idunt.</p></div></div></li>
-                                         <li><div class="abcontent"><div class="ano"><span>02</span></div> <div class="text"><h3>Global Students</h3> <p>consectetur adipiscing elit sed do eiusmod tem incid idunt.</p></div></div></li>
+                                         <li><div class="abcontent"><div class="ano"><span>01</span></div> <div class="text"><h3>Bằng tiến sĩ</h3> <p>consectetur adipiscing elit sed do eiusmod tem incid idunt.</p></div></div></li>
+                                         <li><div class="abcontent"><div class="ano"><span>02</span></div> <div class="text"><h3>Sinh viên toàn cầu</h3> <p>consectetur adipiscing elit sed do eiusmod tem incid idunt.</p></div></div></li>
                                          
                                     </ul>
                              </div>

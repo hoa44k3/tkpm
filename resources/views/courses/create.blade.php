@@ -4,48 +4,48 @@
 @section('body')
 <div class="card">
     <div class="card-header">
-        <h4>Thêm Khóa Học Mới</h4>
+        <h4>Thêm Khóa Học</h4>
     </div>
     <div class="card-body">
         <form action="{{ route('courses.store') }}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="teacher_name">Tên Giáo Viên</label>
-                <input type="text" name="teacher_name" class="form-control" id="teacher_name" required>
+                <label for="teacher_name">Tên Giáo viên</label>
+                <input type="text" name="teacher_name" id="teacher_name" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="teacher_title">Chức Danh Giáo Viên</label>
-                <input type="text" name="teacher_title" class="form-control" id="teacher_title" required>
+                <label for="teacher_title">Chức danh</label>
+                <input type="text" name="teacher_title" id="teacher_title" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="age_group">Nhóm Tuổi</label>
-                <input type="text" name="age_group" class="form-control" id="age_group" required>
+                <label for="age_group">Nhóm tuổi</label>
+                <input type="text" name="age_group" id="age_group" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="time">Thời Gian</label>
-                <input type="text" name="time" class="form-control" id="time" required>
+                <label for="time">Thời gian lớp học</label>
+                <input type="text" name="time" id="time" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="class_size">Số Lượng Học Viên</label>
-                <input type="number" name="class_size" class="form-control" id="class_size" required>
+                <label for="class_size">Số lượng học viên</label>
+                <input type="number" name="class_size" id="class_size" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="fee">Học Phí</label>
-                <input type="text" name="fee" class="form-control" id="fee" required>
+                <label for="fee">Học phí</label>
+                <input type="number" step="0.01" name="fee" id="fee" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="course_title">Tên Khóa Học</label>
-                <input type="text" name="course_title" class="form-control" id="course_title" required>
+                <label for="course_title">Tên khóa học</label>
+                <input type="text" name="course_title" id="course_title" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="description">Mô Tả</label>
-                <textarea name="description" class="form-control" id="description" rows="3" required></textarea>
+                <label for="description">Mô tả khóa học</label>
+                <textarea name="description" id="description" class="form-control" required></textarea>
             </div>
             <div class="form-group">
-                <label for="rating">Đánh Giá</label>
-                <input type="text" name="rating" class="form-control" id="rating">
+                <label for="rating">Đánh giá</label>
+                <input type="number" step="0.1" name="rating" id="rating" class="form-control">
             </div>
-            <button type="submit" class="btn btn-success">Lưu</button>
+            <button type="submit" class="btn btn-primary">Thêm</button>
         </form>
     </div>
 </div>

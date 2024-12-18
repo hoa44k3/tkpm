@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ClassController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
@@ -79,6 +80,15 @@ Route::prefix('admin')->group(function () {
         Route::put('/{comment}', [CommentController::class, 'update'])->name('comments.update');
         Route::delete('/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
     });
+    Route::prefix('classes')->group(function () {
+        Route::get('/', [ClassController::class, 'index'])->name('classes.index');
+        Route::get('/create', [ClassController::class, 'create'])->name('classes.create');
+        Route::post('/', [ClassController::class, 'store'])->name('classes.store');
+        Route::get('/{class}/edit', [ClassController::class, 'edit'])->name('classes.edit');
+        Route::put('/{class}', [ClassController::class, 'update'])->name('classes.update');
+        Route::delete('/{class}', [ClassController::class, 'destroy'])->name('classes.destroy');
+    });
+    
     Route::prefix('courses')->group(function () {
         Route::get('/', [CoursesController::class, 'index'])->name('courses.index');
         Route::get('/create', [CoursesController::class, 'create'])->name('courses.create');
@@ -94,8 +104,7 @@ Route::prefix('admin')->group(function () {
         Route::get('/{review}/edit', [TeacherReviewController::class, 'edit'])->name('reviews.edit');
         Route::put('/{review}', [TeacherReviewController::class, 'update'])->name('reviews.update');
         Route::delete('/{review}', [TeacherReviewController::class, 'destroy'])->name('reviews.destroy');
-    });
-    
+    }); 
 });    
     
 Route::group(['prefix' => ''], function() {

@@ -11,42 +11,42 @@
             @csrf
             @method('PUT')
             <div class="form-group">
-                <label for="teacher_name">Tên Giáo Viên</label>
-                <input type="text" name="teacher_name" class="form-control" id="teacher_name" value="{{ $course->teacher_name }}" required>
+                <label for="teacher_name">Tên Giáo viên</label>
+                <input type="text" name="teacher_name" id="teacher_name" value="{{ $course->teacher_name }}" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="teacher_title">Chức Danh Giáo Viên</label>
-                <input type="text" name="teacher_title" class="form-control" id="teacher_title" value="{{ $course->teacher_title }}" required>
+                <label for="teacher_title">Chức danh</label>
+                <input type="text" name="teacher_title" id="teacher_title" value="{{ $course->teacher_title }}" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="age_group">Nhóm Tuổi</label>
-                <input type="text" name="age_group" class="form-control" id="age_group" value="{{ $course->age_group }}" required>
+                <label for="age_group">Nhóm tuổi</label>
+                <input type="text" name="age_group" id="age_group" value="{{ $course->age_group }}" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="time">Thời Gian</label>
-                <input type="text" name="time" class="form-control" id="time" value="{{ $course->time }}" required>
+                <label for="time">Thời gian lớp học</label>
+                <input type="text" name="time" id="time" value="{{ $course->time }}" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="class_size">Số Lượng Học Viên</label>
-                <input type="number" name="class_size" class="form-control" id="class_size" value="{{ $course->class_size }}" required>
+                <label for="class_size">Số lượng học viên</label>
+                <input type="number" name="class_size" id="class_size" value="{{ $course->class_size }}" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="fee">Học Phí</label>
-                <input type="text" name="fee" class="form-control" id="fee" value="{{ $course->fee }}" required>
+                <label for="fee">Học phí</label>
+                <input type="number" step="0.01" name="fee" id="fee" value="{{ $course->fee }}" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="course_title">Tên Khóa Học</label>
-                <input type="text" name="course_title" class="form-control" id="course_title" value="{{ $course->course_title }}" required>
+                <label for="course_title">Tên khóa học</label>
+                <input type="text" name="course_title" id="course_title" value="{{ $course->course_title }}" class="form-control" required>
             </div>
             <div class="form-group">
-                <label for="description">Mô Tả</label>
-                <textarea name="description" class="form-control" id="description" rows="3" required>{{ $course->description }}</textarea>
+                <label for="description">Mô tả khóa học</label>
+                <textarea name="description" id="description" class="form-control" required>{{ $course->description }}</textarea>
             </div>
             <div class="form-group">
-                <label for="rating">Đánh Giá</label>
-                <input type="text" name="rating" class="form-control" id="rating" value="{{ $course->rating }}">
+                <label for="rating">Đánh giá</label>
+                <input type="number" step="0.1" name="rating" id="rating" value="{{ $course->rating }}" class="form-control">
             </div>
-            <button type="submit" class="btn btn-success">Cập Nhật</button>
+            <button type="submit" class="btn btn-primary">Cập nhật</button>
         </form>
     </div>
 </div>

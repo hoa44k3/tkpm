@@ -12,13 +12,16 @@
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Teacher Name</th>
-                    <th>Title</th>
-                    <th>Age Group</th>
-                    <th>Time</th>
-                    <th>Class Size</th>
-                    <th>Fee</th>
-                    <th>Action</th>
+                    <th>Tên Giáo viên</th>
+                    <th>Chức danh</th>
+                    <th>Nhóm tuổi</th>
+                    <th>Thời gian lớp học</th>
+                    <th>Số lượng học viên</th>
+                    <th>Học phí</th>
+                    <th>Tên khóa học</th>
+                    <th>Mô tả khóa học</th>
+                    <th>Đánh giá</th>
+                    <th>Hành động</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,6 +34,9 @@
                         <td>{{ $course->time }}</td>
                         <td>{{ $course->class_size }}</td>
                         <td>${{ $course->fee }}</td>
+                        <td>{{ $course->course_title }}</td>
+                        <td>{{ $course->description }}</td>
+                        <td>{{ $course->rating ?? 'Chưa đánh giá' }}</td>
                         <td>
                             <a href="{{ route('courses.edit', $course->id) }}" class="btn btn-warning">Sửa</a>
                             <button data-id="{{ $course->id }}" class="btn btn-danger delete-course">Xóa</button>

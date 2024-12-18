@@ -12,7 +12,7 @@
                  <div class="col-xl-12 col-lg-12">
                      <div class="breadcrumb-wrap text-left">
                          <div class="breadcrumb-title">
-                             <h2>Blog</h2>    
+                             <h2>Bài viết</h2>    
                              
                          </div>
                      </div>
@@ -21,8 +21,8 @@
                        
                          <nav aria-label="breadcrumb">
                              <ol class="breadcrumb">
-                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                 <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                 <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                                 <li class="breadcrumb-item active" aria-current="page">Bài viết</li>
                              </ol>
                          </nav>
                      </div>

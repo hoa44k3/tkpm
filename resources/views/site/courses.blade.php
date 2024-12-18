@@ -11,7 +11,7 @@
                  <div class="col-xl-12 col-lg-12">
                      <div class="breadcrumb-wrap text-left">
                          <div class="breadcrumb-title">
-                             <h2>Courses Two</h2>    
+                             <h2>Thông tin </h2>    
                              
                          </div>
                      </div>

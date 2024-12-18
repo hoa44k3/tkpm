@@ -15,9 +15,9 @@
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-7 col-md-8">
                              <div class="slider-content s-slider-content pt-150">
-                                 <h5 data-animation="fadeInUp" data-delay=".4s">Welcome To Childcare Service</h5>
-                                  <h2 data-animation="fadeInUp" data-delay=".4s">The Premium School For Your Kid</h2>
-                                 <p data-animation="fadeInUp" data-delay=".6s">Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vehicula, ipsum at molestie tincidunt elementum volutpat dapibus purus cursus sed nisl tristiqu.</p>
+                                 <h5 data-animation="fadeInUp" data-delay=".4s">Chào mừng đến với Trung tâm gia sư</h5>
+                                  <h2 data-animation="fadeInUp" data-delay=".4s">Chấp cánh những ước mơ cho bạn</h2>
+                                 <p data-animation="fadeInUp" data-delay=".6s">Cố gắng phát triển và đào tạo ra những nhân tài giỏi cho đất nước, tạo ra một nền văn minh hiện đại cho xã hội sau này.</p>
                                  
                                   <div class="slider-btn mt-30">                                          
                                      <a href="about.html" class="btn mr-15" data-animation="fadeInUp" data-delay=".4s">Explore More <i class="fal fa-long-arrow-right"></i></a>                                             
@@ -43,14 +43,14 @@
              <div class="row">
                  <div class="col-lg-8">
                      <div class="section-title cta-title wow fadeInLeft animated" data-animation="fadeInDown animated" data-delay=".2s">
-                         <h2>How to Enroll Your Child to a Class?</h2>
-                         <p>At Estuidar University, we prepare you to launch your career by providing a supportive, creative, and professional environment from which to learn practical skills and build a network of industry contacts.</p>
+                         <h2>Làm thế nào để đăng ký cho con bạn vào lớp học?</h2>
+                         <p>Tại Đại học Estuidar, chúng tôi chuẩn bị cho bạn khởi nghiệp bằng cách cung cấp môi trường hỗ trợ, sáng tạo và chuyên nghiệp để học các kỹ năng thực tế và xây dựng mạng lưới quan hệ trong ngành.</p>
                      </div>
                                       
                  </div>
                  <div class="col-lg-4 text-right"> 
                      <div class="cta-btn s-cta-btn wow fadeInRight animated" data-animation="fadeInDown animated" data-delay=".2s">
-                               <a href="about.html" class="btn ss-btn smoth-scroll">Enrollment Now <i class="fal fa-long-arrow-right"></i></a>			
+                               <a href="about.html" class="btn ss-btn smoth-scroll">Đăng ký ngay <i class="fal fa-long-arrow-right"></i></a>			
                          </div>
                  </div>
              
@@ -71,9 +71,9 @@
                          <img src="/site/img/icon/sve-icon1.png" alt="icon01">
                          </div>
                          <div class="text">
-                             <h3>Education Services</h3>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea such and asser sharing listically</p>
-                             <a href="single-courses.html" class="readmore">Read More <i class="fal fa-long-arrow-right"></i></a>
+                             <h3>Dịch vụ giáo dục</h3>
+                             <p>Hình dung liền mạch vốn trí tuệ chất lượng mà không cần sự hợp tác và ý tưởng vượt trội như vậy và chia sẻ danh sách một cách chắc chắn</p>
+                             <a href="single-courses.html" class="readmore">Đọc thêm<i class="fal fa-long-arrow-right"></i></a>
                          </div>
                       </div>
                          
@@ -87,9 +87,9 @@
                          <img src="/site/img/icon/sve-icon2.png" alt="icon01">
                          </div>
                          <div class="text">
-                             <h3>Expert Teachers</h3>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea such and asser sharing listically</p>
-                             <a href="single-courses.html" class="readmore">Read More <i class="fal fa-long-arrow-right"></i></a>
+                             <h3>Giáo viên chuyên gia</h3>
+                             <p>Trực quan hóa vốn trí tuệ chất lượng mà không cần sự hợp tác và ý tưởng vượt trội như vậy và chia sẻ danh sách một cách chắc chắn</p>
+                             <a href="single-courses.html" class="readmore">Đọc thêm<i class="fal fa-long-arrow-right"></i></a>
                          </div>
                       </div>
                         
@@ -103,9 +103,9 @@
                          <img src="/site/img/icon/sve-icon3.png" alt="icon01">
                          </div>
                          <div class="text">
-                            <h3>Music & Art</h3>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea such and asser sharing listically</p>
-                             <a href="single-courses.html" class="readmore">Read More <i class="fal fa-long-arrow-right"></i></a>
+                            <h3>Âm nhạc & Nghệ thuật</h3>
+                             <p>Trực quan hóa vốn tri thức chất lượng mà không cần sự hợp tác và ý tưởng vượt trội như vậy và chia sẻ danh sách một cách chắc chắn</p>
+                             <a href="single-courses.html" class="readmore">Đọc thêm <i class="fal fa-long-arrow-right"></i></a>
                          </div>
                       </div>
                          

@@ -7,21 +7,23 @@ use App\Models\TeacherReview;
 use App\Models\Courses;
 class TeacherReviewController extends Controller
 {
+    
+
     public function index(Request $request)
     {
         $course_id = $request->query('course'); // Lấy course_id từ query string
-        
+
         if (!$course_id) {
             abort(404, 'Course not found.');
         }
-    
-        $courses = Courses::findOrFail($course_id);
-        $reviews = TeacherReview::where('courses_id', $course_id)->get();
-    
+
+        $courses = Courses::findOrFail($course_id); // Lấy thông tin khóa học
+        $reviews = TeacherReview::where('courses_id', $course_id)->get(); // Lấy đánh giá theo course_id
+
         return view('reviews.index', compact('reviews', 'courses'));
     }
-    
 
+    
     public function create(Request $request)
     {
         $course_id = $request->query('course'); // Lấy course_id từ query string
