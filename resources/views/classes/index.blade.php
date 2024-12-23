@@ -36,10 +36,7 @@
                         <td>{{ $class->class_size }}</td>
                         <td>${{ $class->fee }}</td>
                         <td>
-                      
-                            <img src="{{ asset('storage/classes/' . $class->image) }}" alt="Class Image">
-
-
+                            <img src="{{ asset('storage/' . $class->image) }}" alt="Class Image"width="100px">
                         </td>
                         <td>
                             <a href="{{ route('classes.edit', $class->id) }}" class="btn btn-warning">Edit</a>

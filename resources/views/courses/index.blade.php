@@ -21,6 +21,7 @@
                     <th>Tên khóa học</th>
                     <th>Mô tả khóa học</th>
                     <th>Đánh giá</th>
+                    <th>Địa điểm</th>
                     <th>Hành động</th>
                 </tr>
             </thead>
@@ -36,7 +37,9 @@
                         <td>${{ $course->fee }}</td>
                         <td>{{ $course->course_title }}</td>
                         <td>{{ $course->description }}</td>
-                        <td>{{ $course->rating ?? 'Chưa đánh giá' }}</td>
+                        
+                        <td>{{ $course->rating }}</td>
+                        <td>{{ $course->location }}</td> 
                         <td>
                             <a href="{{ route('courses.edit', $course->id) }}" class="btn btn-warning">Sửa</a>
                             <button data-id="{{ $course->id }}" class="btn btn-danger delete-course">Xóa</button>

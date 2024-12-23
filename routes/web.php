@@ -10,6 +10,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CoursesController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\TeacherReviewController;
 use App\Models\Blog;
 use App\Models\Category;
@@ -72,6 +74,22 @@ Route::prefix('admin')->group(function () {
         Route::put('/update/{id}', [CategoryController::class, 'update'])->name('category.update');
         Route::delete('/destroy/{id}', [CategoryController::class, 'destroy'])->name('category.destroy');
     });
+    Route::group(['prefix' => 'teachers'], function () {
+        Route::get('/', [TeacherController::class, 'index'])->name('teachers.index');
+        Route::get('/create', [TeacherController::class, 'create'])->name('teachers.create');
+        Route::post('/store', [TeacherController::class, 'store'])->name('teachers.store');
+        Route::get('/edit/{id}', [TeacherController::class, 'edit'])->name('teachers.edit');
+        Route::put('/update/{id}', [TeacherController::class, 'update'])->name('teachers.update');
+        Route::delete('/destroy/{id}', [TeacherController::class, 'destroy'])->name('teachers.destroy');
+    });
+    Route::group(['prefix' => 'reviews'], function () {
+        Route::get('/', [ReviewController::class, 'index'])->name('reviews.index');
+        Route::get('/create', [ReviewController::class, 'create'])->name('reviews.create');
+        Route::post('/store', [ReviewController::class, 'store'])->name('reviews.store');
+        Route::get('/edit/{id}', [ReviewController::class, 'edit'])->name('reviews.edit');
+        Route::put('/update/{id}', [ReviewController::class, 'update'])->name('reviews.update');
+        Route::delete('/destroy/{id}', [ReviewController::class, 'destroy'])->name('reviews.destroy');
+    });
     Route::prefix('comments')->group(function () {
         Route::get('/', [CommentController::class, 'index'])->name('comments.index');
         Route::get('/create', [CommentController::class, 'create'])->name('comments.create');
@@ -97,14 +115,7 @@ Route::prefix('admin')->group(function () {
         Route::put('/{course}', [CoursesController::class, 'update'])->name('courses.update'); // Đổi từ {courses} thành {course}
         Route::delete('/{course}', [CoursesController::class, 'destroy'])->name('courses.destroy'); // Đổi từ {courses} thành {course}
     });
-    Route::prefix('reviews')->group(function () {
-        Route::get('/', [TeacherReviewController::class, 'index'])->name('reviews.index');
-        Route::get('/create', [TeacherReviewController::class, 'create'])->name('reviews.create');
-        Route::post('/', [TeacherReviewController::class, 'store'])->name('reviews.store');
-        Route::get('/{review}/edit', [TeacherReviewController::class, 'edit'])->name('reviews.edit');
-        Route::put('/{review}', [TeacherReviewController::class, 'update'])->name('reviews.update');
-        Route::delete('/{review}', [TeacherReviewController::class, 'destroy'])->name('reviews.destroy');
-    }); 
+    
 });    
     
 Route::group(['prefix' => ''], function() {

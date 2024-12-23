@@ -118,6 +118,18 @@
                   <p>Category</p>
                 </a>
               </li>
+              <li class="nav-item {{ request()->routeIs('teacher.*') ? 'active' : '' }}">
+                <a href="{{ route('teachers.index') }}">
+                  <i class="fas fa-layer-group"></i>
+                  <p>Teacher</p>
+                </a>
+              </li>
+              <li class="nav-item {{ request()->routeIs('review.*') ? 'active' : '' }}">
+                <a href="{{ route('reviews.index') }}">
+                  <i class="fas fa-layer-group"></i>
+                  <p>Review</p>
+                </a>
+              </li>
               <li class="nav-item {{ request()->routeIs('comments.*') ? 'active' : '' }}">
                 <a href="{{ route('comments.index') }}">
                   <i class="fas fa-comments"></i>
@@ -130,12 +142,7 @@
                   <p>Courses</p>
                 </a>
               </li>
-              <li class="nav-item {{ request()->routeIs('reviews.*') ? 'active' : '' }}">
-                <a href="{{ route('reviews.index', ['course' => request()->query('course')]) }}">
-                    <i class="fas fa-comments"></i>
-                    <p>Review</p>
-                </a>
-              </li>
+              
               <li class="nav-item {{ request()->routeIs('classes.*') ? 'active' : '' }}">
                 <a href="{{ route('classes.index') }}">
                   <i class="fas fa-layer-group"></i>

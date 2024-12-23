@@ -42,9 +42,14 @@
                 <textarea name="description" id="description" class="form-control" required></textarea>
             </div>
             <div class="form-group">
-                <label for="rating">Đánh giá</label>
-                <input type="number" step="0.1" name="rating" id="rating" class="form-control">
+                <label for="rating">Đánh giá (Từ 1.0 - 5.0)</label>
+                <input type="number" step="0.1" name="rating" id="rating" class="form-control" min="1" max="5" value="3" required>
             </div>
+            <div class="form-group">
+                <label for="location">Địa điểm học</label>
+                <input type="text" class="form-control" id="location" name="location" value="{{ old('location', $course->location ?? '') }}" placeholder="Nhập địa điểm học">
+            </div>
+            
             <button type="submit" class="btn btn-primary">Thêm</button>
         </form>
     </div>

@@ -27,11 +27,8 @@
                         <tr id="user-{{ $user->id }}">
                             <td>{{ $user->id }}</td>
                             <td>
-                                @if($user->avatar)
-                                    <img src="{{ asset('storage/' . $user->avatar) }}" alt="User Image" style="width: 50px; height: 50px; object-fit: cover;">
-                                @else
-                                    <img src="{{ asset('assets/img/default-avatar.png') }}" alt="Default Avatar" style="width: 50px; height: 50px; object-fit: cover;">
-                                @endif
+                            
+                                <img src="{{ $user->avatar ? asset('storage/' . $user->avatar) : asset('assets/img/default-avatar.jpg') }}" alt="User Image" style="width: 50px; height: 50px; object-fit: cover;"> 
                             </td>
                             
                             <td>{{ $user->name }}</td>

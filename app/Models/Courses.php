@@ -19,9 +19,12 @@ class Courses extends Model
         'description',
         'rating',
     ];
-    public function teacherReviews()
-{
-    return $this->hasMany(TeacherReview::class);
-}
-
+        public function teacherReviews()
+    {
+        return $this->hasMany(TeacherReview::class);
+    }
+    public function reviews()
+    {
+        return $this->hasMany(Review::class, 'course_id');  // Đảm bảo 'course_id' là tên đúng của khóa ngoại trong bảng reviews
+    }
 }

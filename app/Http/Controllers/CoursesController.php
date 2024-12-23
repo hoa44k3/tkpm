@@ -9,6 +9,14 @@ class CoursesController extends Controller
     public function index()
     {
         $courses = Courses::all(); // Lấy tất cả khóa học
+       // Lấy tất cả khóa học và kèm theo các đánh giá
+       //$courses = Courses::with('reviews')->get();
+
+        // Tính điểm trung bình đánh giá từ bảng reviews cho mỗi khóa học
+        foreach ($courses as $course) {
+            $averageRating = $course->reviews()->avg('rating');
+            $course->average_rating = $averageRating ?: 'Chưa đánh giá';
+        }
         return view('courses.index', compact('courses'));
     }
 
@@ -29,6 +37,7 @@ class CoursesController extends Controller
             'course_title' => 'required|string|max:255',
             'description' => 'required|string',
             'rating' => 'nullable|numeric',
+            'location' => 'required|string|max:255',
         ]);
         
         Courses::create($request->all());
@@ -54,6 +63,7 @@ class CoursesController extends Controller
             'course_title' => 'required|string|max:255',
             'description' => 'required|string',
             'rating' => 'nullable|numeric',
+            'location' => 'required|string|max:255',
         ]);
 
         $course = Courses::findOrFail($id);

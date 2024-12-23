@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('course_title'); // Tên khóa học (Drawing Class)
             $table->text('description'); // Mô tả khóa học
             $table->decimal('rating', 2, 1); // Đánh giá (4.5 stars)
+            $table->string('location')->default('Online'); // Địa điểm học
             $table->timestamps();
         });
     }
