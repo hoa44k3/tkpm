@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('image');
             $table->text('description');
             $table->text('comment')->nullable()->change(); 
-
             $table->string('position')->nullable();
             $table->unsignedBigInteger('view_count')->default(0);
             $table->enum('status', ['pending', 'approved'])->default('pending');

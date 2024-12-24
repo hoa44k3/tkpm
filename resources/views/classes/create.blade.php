@@ -38,6 +38,27 @@
             </div>
 
             <div class="form-group">
+                <label for="teacher_id">Tên giáo viên</label>
+                <select class="form-control" id="teacher_id" name="teacher_id">
+                    <option value="">Chọn giáo viên</option>
+                    @foreach($teachers as $teacher)
+                        <option value="{{ $teacher->id }}" {{ old('teacher_id', $class->teacher_id ?? '') == $teacher->id ? 'selected' : '' }}>
+                            {{ $teacher->name }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Địa điểm</label>
+                <div>
+                    <label><input type="radio" name="location" value="online" {{ old('location', $class->location ?? '') == 'online' ? 'checked' : '' }}> Online</label>
+                    <label><input type="radio" name="location" value="offline" {{ old('location', $class->location ?? '') == 'offline' ? 'checked' : '' }}> Offline</label>
+                </div>
+            </div>
+            
+
+            <div class="form-group">
                 <label for="image">Class Image</label>
                 <input type="file" class="form-control" id="image" name="image">
             </div>

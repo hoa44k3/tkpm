@@ -10,6 +10,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CoursesController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\TeacherReviewController;
@@ -81,6 +83,8 @@ Route::prefix('admin')->group(function () {
         Route::get('/edit/{id}', [TeacherController::class, 'edit'])->name('teachers.edit');
         Route::put('/update/{id}', [TeacherController::class, 'update'])->name('teachers.update');
         Route::delete('/destroy/{id}', [TeacherController::class, 'destroy'])->name('teachers.destroy');
+        Route::get('/{teacher}', [TeacherController::class, 'show'])->name('teachers.show');
+
     });
     Route::group(['prefix' => 'reviews'], function () {
         Route::get('/', [ReviewController::class, 'index'])->name('reviews.index');
@@ -105,6 +109,24 @@ Route::prefix('admin')->group(function () {
         Route::get('/{class}/edit', [ClassController::class, 'edit'])->name('classes.edit');
         Route::put('/{class}', [ClassController::class, 'update'])->name('classes.update');
         Route::delete('/{class}', [ClassController::class, 'destroy'])->name('classes.destroy');
+        Route::get('/{id}', [ClassController::class, 'show'])->name('classes.show');
+
+    });
+    Route::prefix('faqs')->group(function () {
+        Route::get('/', [FaqController::class, 'index'])->name('faqs.index');
+        Route::post('/store', [FaqController::class, 'store'])->name('faqs.store'); // Thêm câu hỏi
+        Route::post('/answer/{id}', [FaqController::class, 'answer'])->name('faqs.answer'); // Trả lời câu hỏi
+        Route::delete('/{faq}', [FaqController::class, 'destroy'])->name('faqs.destroy');
+    });
+    Route::prefix('events')->group(function () {
+        Route::get('/', [EventController::class, 'index'])->name('events.index');
+        Route::get('/create', [EventController::class, 'create'])->name('events.create');
+        Route::post('/', [EventController::class, 'store'])->name('events.store');
+        Route::get('/{event}/edit', [EventController::class, 'edit'])->name('events.edit');
+        Route::put('/{event}', [EventController::class, 'update'])->name('events.update');
+        Route::delete('/{event}', [EventController::class, 'destroy'])->name('events.destroy');
+        Route::get('/{id}', [EventController::class, 'show'])->name('events.show');
+
     });
     
     Route::prefix('courses')->group(function () {
@@ -128,4 +150,5 @@ Route::group(['prefix' => ''], function() {
     Route::get('/teamdetail', [HomeController::class, 'teamdetail'])->name('teamdetail');
     Route::get('/courses', [HomeController::class, 'courses'])->name('courses');
     Route::get('/coursesdetail', [HomeController::class, 'coursesdetail'])->name('coursesdetail');
+    Route::post('/contact/store', [HomeController::class, 'storeContact'])->name('contact.store');
 });

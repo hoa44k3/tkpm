@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
             $table->string('teacher_name'); // Tên giáo viên
+            $table->string('teacher_avatar')->nullable(); // Ảnh đại diện giáo viên
+            $table->string('background_image')->nullable(); // Ảnh nền khóa học
             $table->string('teacher_title'); // Chức danh giáo viên (Teacher)
             $table->string('age_group'); // Nhóm tuổi (5-10 Years)
             $table->string('time'); // Thời gian lớp học (8-10am)

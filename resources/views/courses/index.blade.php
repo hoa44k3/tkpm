@@ -13,6 +13,7 @@
                 <tr>
                     <th>#</th>
                     <th>Tên Giáo viên</th>
+                    <th>Ảnh Đại Diện</th>
                     <th>Chức danh</th>
                     <th>Nhóm tuổi</th>
                     <th>Thời gian lớp học</th>
@@ -22,6 +23,8 @@
                     <th>Mô tả khóa học</th>
                     <th>Đánh giá</th>
                     <th>Địa điểm</th>
+                    <th>Ảnh Nền</th>
+                    <th>Ngày Tạo</th>
                     <th>Hành động</th>
                 </tr>
             </thead>
@@ -30,16 +33,30 @@
                     <tr>
                         <td>{{ $course->id }}</td>
                         <td>{{ $course->teacher_name }}</td>
+                        <td>
+                            @if($course->teacher_avatar)
+                                <img src="{{ asset('storage/' . $course->teacher_avatar) }}" alt="Avatar" style="width: 50px; height: 50px; object-fit: cover;">
+                            @else
+                                <img src="{{ asset('assets/img/default-avatar.jpg') }}" alt="Default Avatar" style="width: 50px; height: 50px; object-fit: cover;">
+                            @endif
+                        </td>
                         <td>{{ $course->teacher_title }}</td>
                         <td>{{ $course->age_group }}</td>
                         <td>{{ $course->time }}</td>
                         <td>{{ $course->class_size }}</td>
                         <td>${{ $course->fee }}</td>
                         <td>{{ $course->course_title }}</td>
-                        <td>{{ $course->description }}</td>
-                        
+                        <td>{{ $course->description }}</td>   
                         <td>{{ $course->rating }}</td>
                         <td>{{ $course->location }}</td> 
+                        <td>
+                            @if($course->background_image)
+                                <img src="{{ asset('storage/' . $course->background_image) }}" alt="Background Image" style="width: 50px; height: 50px; object-fit: cover;">
+                            @else
+                                <img src="{{ asset('assets/img/default-background.jpg') }}" alt="Default Background" style="width: 50px; height: 50px; object-fit: cover;">
+                            @endif
+                        </td>
+                        <td>{{ $course->created_at->format('d/m/Y') }}</td>
                         <td>
                             <a href="{{ route('courses.edit', $course->id) }}" class="btn btn-warning">Sửa</a>
                             <button data-id="{{ $course->id }}" class="btn btn-danger delete-course">Xóa</button>

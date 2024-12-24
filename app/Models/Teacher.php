@@ -22,4 +22,8 @@ class Teacher extends Model
     {
         return $this->hasMany(Review::class, 'teacher_id');
     }
+    public function classes()
+    {
+        return $this->hasMany(Classes::class);
+    }
 }

@@ -139,4 +139,10 @@ class TeacherController extends Controller
 
         return redirect()->route('teachers.index')->with('success', 'Giáo viên đã được xóa thành công.');
     }
+        public function show($id)
+    {
+        $teacher = Teacher::findOrFail($id);
+        return view('teachers.show', compact('teacher'));
+    }
+
 }

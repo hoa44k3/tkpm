@@ -58,8 +58,8 @@
                              <div class="row">
                              <div class="col-md-12">
                               <ul class="green2">                                              
-                                         <li><div class="abcontent"><div class="ano"><span>01</span></div> <div class="text"><h3>Bằng tiến sĩ</h3> <p>consectetur adipiscing elit sed do eiusmod tem incid idunt.</p></div></div></li>
-                                         <li><div class="abcontent"><div class="ano"><span>02</span></div> <div class="text"><h3>Sinh viên toàn cầu</h3> <p>consectetur adipiscing elit sed do eiusmod tem incid idunt.</p></div></div></li>
+                                         <li><div class="abcontent"><div class="ano"><span>01</span></div> <div class="text"><h3>Bằng tiến sĩ</h3> <p>luôn luôn tạo ra hành trang mới cho ước mơ .</p></div></div></li>
+                                         <li><div class="abcontent"><div class="ano"><span>02</span></div> <div class="text"><h3>Sinh viên toàn cầu</h3> <p>luôn luôn tạo ra hành trang mới cho ước mơ .</p></div></div></li>
                                          
                                     </ul>
                              </div>
@@ -79,14 +79,14 @@
              <div class="row justify-content-center">
                  <div class="col-lg-8">
                      <div class="section-title cta-title wow fadeInLeft animated" data-animation="fadeInDown animated" data-delay=".2s">
-                         <h2>Scholarship Programs</h2>
-                         <p>At Estuidar University, we prepare you to launch your career by providing a supportive, creative, and professional environment from which to learn practical skills and build a network of industry contacts.</p>
+                         <h2>Chương trình học bổng</h2>
+                         <p>Tại Đại học Estuidar, chúng tôi chuẩn bị cho bạn khởi nghiệp bằng cách cung cấp một môi trường hỗ trợ, sáng tạo và chuyên nghiệp để học các kỹ năng thực tế và xây dựng mạng lưới liên hệ trong ngành..</p>
                      </div>
                                       
                  </div>
                  <div class="col-lg-4 text-right"> 
                      <div class="cta-btn s-cta-btn wow fadeInRight animated mt-30" data-animation="fadeInDown animated" data-delay=".2s">
-                               <a href="about.html" class="btn ss-btn smoth-scroll">Financial Aid <i class="fal fa-long-arrow-right"></i></a>			
+                               <a href="about.html" class="btn ss-btn smoth-scroll">Hỗ trợ tài chính <i class="fal fa-long-arrow-right"></i></a>			
                          </div>
                  </div>
              
@@ -103,130 +103,95 @@
                 
                  <div class="col-lg-7">
                      <div class="section-title wow fadeInLeft animated" data-animation="fadeInDown animated" data-delay=".2s">
-                         <h2>Get every single answer here.</h2>
-                         <p>A business or organization established to provide a particular service, typically one that involves a organizing transactions.</p>
+                         <h2>Nhận mọi câu trả lời ở đây..</h2>
+                         <p>Một doanh nghiệp hoặc tổ chức được thành lập để cung cấp một dịch vụ cụ thể, thường là dịch vụ liên quan đến việc tổ chức các giao dịch.</p>
+                     </div>
+                     <div class="col-lg-5">
+                        <h2>Đặt câu hỏi</h2>
+                        <form method="POST" action="{{ route('faqs.store') }}">
+                            @csrf
+                            <div class="form-group">
+                                <label for="question">Câu hỏi:</label>
+                                <input type="text" id="question" name="question" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Gửi câu hỏi</button>
+                        </form>
                      </div>
                         <div class="faq-wrap mt-30 pr-30 wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
-                         <div class="accordion" id="accordionExample">
-                             <div class="card">
-                                 <div class="card-header" id="headingThree">
-                                     <h2 class="mb-0">
-                                         <button class="faq-btn" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseThree2"  >
-                                            01 Cras turpis felis, elementum sed mi at arcu ?
-                                         </button>
-                                     </h2>
-                                 </div>
-                                 <div id="collapseThree2" class="collapse show"
-                                     data-bs-parent="#accordionExample">
-                                     <div class="card-body">
-                                         Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="card">
-                                 <div class="card-header" id="headingOne">
-                                     <h2 class="mb-0">
-                                         <button class="faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseOne"  >
-                                            02 Vestibulum nibh risus, in neque eleifendulputate sem ?
-                                         </button>
-                                     </h2>
-                                 </div>
-                                 <div id="collapseOne" class="collapse" data-bs-parent="#accordionExample">
-                                     <div class="card-body">
-                                         Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="card">
-                                 <div class="card-header" id="headingTwo">
-                                     <h2 class="mb-0">
-                                         <button class="faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseTwo"  >
-                                           03 Donec maximus, sapien id auctor ornare ?
-                                         </button>
-                                     </h2>
-                                 </div>
-                                 <div id="collapseTwo" class="collapse" data-bs-parent="#accordionExample">
-                                     <div class="card-body">
-                                       Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.
-                                     </div>
-                                 </div>
-                             </div>   
-                             <div class="card">
-                                 <div class="card-header">
-                                     <h2 class="mb-0">
-                                         <button class="faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseThree"  >
-                                         04 Vestibulum nibh risus, in neque eleifendulputate sem ?
-                                         </button>
-                                     </h2>
-                                 </div>
-                                 <div id="collapseThree" class="collapse" data-bs-parent="#accordionExample">
-                                     <div class="card-body">
-                                         Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.
-                                     </div>
-                                 </div>
-                             </div>
-                             <div class="card">
-                                 <div class="card-header" id="headingFour">
-                                     <h2 class="mb-0">
-                                         <button class="faq-btn collapsed" type="button" data-bs-toggle="collapse"
-                                             data-bs-target="#collapseFive"  >
-                                         05 Donec maximus, sapien id auctor ornare ?
-                                         </button>
-                                     </h2>
-                                 </div>
-                                 <div id="collapseFive" class="collapse" data-bs-parent="#accordionExample">
-                                     <div class="card-body">
-                                         Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>               
-                 </div>
+                            <div class="accordion" id="accordionExample">
+                                @foreach ($faqs as $faq)
+                                    <div class="card">
+                                        <div class="card-header" id="heading{{ $faq['id'] }}">
+                                            <h2 class="mb-0">
+                                                <button class="faq-btn {{ $loop->first ? '' : 'collapsed' }}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $faq['id'] }}">
+                                                    {{ $faq['id'] }}. {{ $faq['question'] }}
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse{{ $faq['id'] }}" class="collapse {{ $loop->first ? 'show' : '' }}" data-bs-parent="#accordionExample">
+                                            <div class="card-body">
+                                                @if ($faq['answer'])
+                                                    {{ $faq['answer'] }}
+                                                @else
+                                                    <form method="POST" action="{{ route('faqs.answer', $faq['id']) }}">
+                                                        @csrf
+                                                        <div class="form-group">
+                                                            <label for="answer{{ $faq['id'] }}">Trả lời câu hỏi:</label>
+                                                            <textarea id="answer{{ $faq['id'] }}" name="answer" class="form-control" required></textarea>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-success mt-3">Trả lời</button>
+                                                    </form>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>   
+                    </div>
                  <div class="col-lg-5">
                      <div class="contact-bg02">
                      <div class="section-title wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                          <h2>
-                           Make An Contact
+                            Tạo một liên hệ
                          </h2>
                        
                      </div>
                          
-                 <form action="https://htmldemo.zcubethemes.com/qeducato/mail.php" method="post" class="contact-form mt-30 wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
-                     <div class="row">
-                     <div class="col-lg-12">
-                         <div class="contact-field p-relative c-name mb-20">                                    
-                             <input type="text" id="firstn" name="firstn" placeholder="First Name" required>
-                         </div>                               
-                     </div>
-                     
-                     <div class="col-lg-12">                               
-                         <div class="contact-field p-relative c-subject mb-20">                                   
-                             <input type="text" id="email" name="email" placeholder="Email" required>
-                         </div>
-                     </div>		
-                     <div class="col-lg-12">                               
-                         <div class="contact-field p-relative c-subject mb-20">                                   
-                             <input type="text" id="phone" name="phone" placeholder="Phone No." required>
-                         </div>
-                     </div>	
-                   
-                     <div class="col-lg-12">
-                         <div class="contact-field p-relative c-message mb-30">                                  
-                             <textarea name="message" id="message" cols="30" rows="10" placeholder="Write comments"></textarea>
-                         </div>
-                         <div class="slider-btn">                                          
-                                     <button class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"><span>Submit Now</span> <i class="fal fa-long-arrow-right"></i></button>				
-                                 </div>                             
-                     </div>
-                     </div>
-                 
-             </form>
-                     
+                     <form action="{{ route('contact.store') }}" method="post" class="contact-form mt-30 wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
+                        @csrf <!-- Đừng quên thêm CSRF token -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="contact-field p-relative c-name mb-20">                                    
+                                    <input type="text" id="firstn" name="firstn" placeholder="First Name" required>
+                                </div>                               
+                            </div>
+                    
+                            <div class="col-lg-12">                               
+                                <div class="contact-field p-relative c-subject mb-20">                                   
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                    
+                            <div class="col-lg-12">                               
+                                <div class="contact-field p-relative c-subject mb-20">                                   
+                                    <input type="text" id="phone" name="phone" placeholder="Phone No." required>
+                                </div>
+                            </div>   
+                    
+                            <div class="col-lg-12">
+                                <div class="contact-field p-relative c-message mb-30">                                  
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write comments" required></textarea>
+                                </div>
+                                <div class="slider-btn">                                          
+                                    <button class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">
+                                        <span>Submit Now</span> 
+                                        <i class="fal fa-long-arrow-right"></i>
+                                    </button>				
+                                </div>                             
+                            </div>
+                        </div>
+                    </form>
                      </div>
                  </div>
              </div>

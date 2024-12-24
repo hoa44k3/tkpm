@@ -49,373 +49,73 @@
                  </div>
              </div>
              <div class="row align-items-center class-scroll">
-                  <div class="col-lg-4 col-md-6 ">
-                      <!-- class-item -->
-                      <div class="class-item mb-30">
-                          <!-- class-img -->
-                         <div class="class-img">
-                             <div class="class-img-outer">
-                                <a href="single-courses-2.html"> <img src="/site/img/class/class-7.jpg" alt="class image"></a>
-                                 <!-- course-meta -->
-                                 <div class="course-meta">
-                                     <div class="row align-items-center">
-                                         <div class="col-lg-8">
-                                             <div class="author">
-                                                 <div class="thumb">
-                                                     <img src="/site/img/bg/testi_avatar.png" alt="image">
-                                                 </div>
-
-                                                 <div class="text">
-                                                     <a href="single-courses-2.html">Robto Jone</a>
-                                                     <p>Teacher</p>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-lg-4">
-                                             <img src="/site/img/bg/star.png" alt="image">
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <!-- course-meta-end -->
-                             </div>                                    
-                         </div>
-                          <!-- class-img -->
-                          <!-- schedule -->
-                         <ul class="schedule">
-                                 <li>
-                                     <span>Age:</span>
-                                     <span class="class-age">5-10 Years</span>
-                                 </li>
-                                 <li>
-                                     <span>Time:</span>
-                                     <span class="class-size">8-10am</span>
-                                 </li>
-                                 <li>
-                                     <span>Class Size:</span>
-                                     <span class="class-size">28</span>
-                                 </li>
-                                 <li>
-                                     <span>Fee:</span>
-                                     <span class="class-size">$50</span>
-                                 </li>
-                             </ul>
-                          <!-- schedule-end -->
-                          <!-- class-content -->
-                         <div class="class-content">
-                             
-                             <h4 class="title"><a href="single-courses.html">Languge Class</a></h4>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea.</p>                                     
-                         </div>
-                        <!-- class-content-end -->
-                     </div>
-                      <!-- class-item-end -->
-                 </div>
-                 <div class="col-lg-4 col-md-6 ">
-                      <!-- class-item -->
-                      <div class="class-item mb-30">
-                          <!-- class-img -->
-                         <div class="class-img">
-                             <div class="class-img-outer">
-                                <a href="single-courses-2.html"> <img src="/site/img/class/class-8.jpg" alt="class image"></a>
-                                 <!-- course-meta -->
-                                 <div class="course-meta">
-                                     <div class="row align-items-center">
-                                         <div class="col-lg-8">
-                                             <div class="author">
-                                                 <div class="thumb">
-                                                     <img src="/site/img/bg/testi_avatar.png" alt="image">
-                                                 </div>
-
-                                                 <div class="text">
-                                                     <a href="single-courses-2.html">Robto Jone</a>
-                                                     <p>Teacher</p>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-lg-4">
-                                             <img src="/site/img/bg/star.png" alt="image">
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <!-- course-meta-end -->
-                             </div>                                    
-                         </div>
-                          <!-- class-img -->
-                          <!-- schedule -->
-                         <ul class="schedule">
-                                 <li>
-                                     <span>Age:</span>
-                                     <span class="class-age">5-10 Years</span>
-                                 </li>
-                                 <li>
-                                     <span>Time:</span>
-                                     <span class="class-size">8-10am</span>
-                                 </li>
-                                 <li>
-                                     <span>Class Size:</span>
-                                     <span class="class-size">28</span>
-                                 </li>
-                                 <li>
-                                     <span>Fee:</span>
-                                     <span class="class-size">$50</span>
-                                 </li>
-                             </ul>
-                          <!-- schedule-end -->
-                          <!-- class-content -->
-                         <div class="class-content">
-                             
-                             <h4 class="title"><a href="single-courses.html">Drawing Class</a></h4>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea.</p>                                     
-                         </div>
-                        <!-- class-content-end -->
-                     </div>
-                      <!-- class-item-end -->
-                 </div>
-                 <div class="col-lg-4 col-md-6 ">
-                      <!-- class-item -->
-                      <div class="class-item mb-30">
-                          <!-- class-img -->
-                         <div class="class-img">
-                             <div class="class-img-outer">
-                                <a href="single-courses-2.html"> <img src="/site/img/class/class-9.jpg" alt="class image"></a>
-                                 <!-- course-meta -->
-                                 <div class="course-meta">
-                                     <div class="row align-items-center">
-                                         <div class="col-lg-8">
-                                             <div class="author">
-                                                 <div class="thumb">
-                                                     <img src="/site/img/bg/testi_avatar.png" alt="image">
-                                                 </div>
-
-                                                 <div class="text">
-                                                     <a href="single-courses-2.html">Robto Jone</a>
-                                                     <p>Teacher</p>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-lg-4">
-                                             <img src="/site/img/bg/star.png" alt="image">
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <!-- course-meta-end -->
-                             </div>                                    
-                         </div>
-                          <!-- class-img -->
-                          <!-- schedule -->
-                         <ul class="schedule">
-                                 <li>
-                                     <span>Age:</span>
-                                     <span class="class-age">5-10 Years</span>
-                                 </li>
-                                 <li>
-                                     <span>Time:</span>
-                                     <span class="class-size">8-10am</span>
-                                 </li>
-                                 <li>
-                                     <span>Class Size:</span>
-                                     <span class="class-size">28</span>
-                                 </li>
-                                 <li>
-                                     <span>Fee:</span>
-                                     <span class="class-size">$50</span>
-                                 </li>
-                             </ul>
-                          <!-- schedule-end -->
-                          <!-- class-content -->
-                         <div class="class-content">
-                             
-                             <h4 class="title"><a href="single-courses.html">Mathematics Class</a></h4>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea.</p>                                     
-                         </div>
-                        <!-- class-content-end -->
-                     </div>
-                      <!-- class-item-end -->
-                 </div>
-                 <div class="col-lg-4 col-md-6 ">
-                      <!-- class-item -->
-                      <div class="class-item mb-30">
-                          <!-- class-img -->
-                         <div class="class-img">
-                             <div class="class-img-outer">
-                                <a href="single-courses-2.html"> <img src="/site/img/class/class-10.jpg" alt="class image"></a>
-                                 <!-- course-meta -->
-                                 <div class="course-meta">
-                                     <div class="row align-items-center">
-                                         <div class="col-lg-8">
-                                             <div class="author">
-                                                 <div class="thumb">
-                                                     <img src="/site/img/bg/testi_avatar.png" alt="image">
-                                                 </div>
-
-                                                 <div class="text">
-                                                     <a href="single-courses-2.html">Robto Jone</a>
-                                                     <p>Teacher</p>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-lg-4">
-                                             <img src="/site/img/bg/star.png" alt="image">
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <!-- course-meta-end -->
-                             </div>                                    
-                         </div>
-                          <!-- class-img -->
-                          <!-- schedule -->
-                         <ul class="schedule">
-                                 <li>
-                                     <span>Age:</span>
-                                     <span class="class-age">5-10 Years</span>
-                                 </li>
-                                 <li>
-                                     <span>Time:</span>
-                                     <span class="class-size">8-10am</span>
-                                 </li>
-                                 <li>
-                                     <span>Class Size:</span>
-                                     <span class="class-size">28</span>
-                                 </li>
-                                 <li>
-                                     <span>Fee:</span>
-                                     <span class="class-size">$50</span>
-                                 </li>
-                             </ul>
-                          <!-- schedule-end -->
-                          <!-- class-content -->
-                         <div class="class-content">
-                             
-                             <h4 class="title"><a href="single-courses.html">Web Design Class</a></h4>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea.</p>                                     
-                         </div>
-                        <!-- class-content-end -->
-                     </div>
-                      <!-- class-item-end -->
-                 </div>
-                 <div class="col-lg-4 col-md-6 ">
-                      <!-- class-item -->
-                      <div class="class-item mb-30">
-                          <!-- class-img -->
-                         <div class="class-img">
-                             <div class="class-img-outer">
-                                <a href="single-courses-2.html"> <img src="/site/img/class/class-11.jpg" alt="class image"></a>
-                                 <!-- course-meta -->
-                                 <div class="course-meta">
-                                     <div class="row align-items-center">
-                                         <div class="col-lg-8">
-                                             <div class="author">
-                                                 <div class="thumb">
-                                                     <img src="/site/img/bg/testi_avatar.png" alt="image">
-                                                 </div>
-
-                                                 <div class="text">
-                                                     <a href="single-courses-2.html">Robto Jone</a>
-                                                     <p>Teacher</p>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-lg-4">
-                                             <img src="/site/img/bg/star.png" alt="image">
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <!-- course-meta-end -->
-                             </div>                                    
-                         </div>
-                          <!-- class-img -->
-                          <!-- schedule -->
-                         <ul class="schedule">
-                                 <li>
-                                     <span>Age:</span>
-                                     <span class="class-age">5-10 Years</span>
-                                 </li>
-                                 <li>
-                                     <span>Time:</span>
-                                     <span class="class-size">8-10am</span>
-                                 </li>
-                                 <li>
-                                     <span>Class Size:</span>
-                                     <span class="class-size">28</span>
-                                 </li>
-                                 <li>
-                                     <span>Fee:</span>
-                                     <span class="class-size">$50</span>
-                                 </li>
-                             </ul>
-                          <!-- schedule-end -->
-                          <!-- class-content -->
-                         <div class="class-content">
-                             
-                             <h4 class="title"><a href="single-courses.html">HTMl Develpment Class</a></h4>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea.</p>                                     
-                         </div>
-                        <!-- class-content-end -->
-                     </div>
-                      <!-- class-item-end -->
-                 </div>
-                 <div class="col-lg-4 col-md-6 ">
-                      <!-- class-item -->
-                      <div class="class-item mb-30">
-                          <!-- class-img -->
-                         <div class="class-img">
-                             <div class="class-img-outer">
-                                <a href="single-courses-2.html"> <img src="/site/img/class/class-12.jpg" alt="class image"></a>
-                                 <!-- course-meta -->
-                                 <div class="course-meta">
-                                     <div class="row align-items-center">
-                                         <div class="col-lg-8">
-                                             <div class="author">
-                                                 <div class="thumb">
-                                                     <img src="/site/img/bg/testi_avatar.png" alt="image">
-                                                 </div>
-
-                                                 <div class="text">
-                                                     <a href="single-courses-2.html">Robto Jone</a>
-                                                     <p>Teacher</p>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                         <div class="col-lg-4">
-                                             <img src="/site/img/bg/star.png" alt="image">
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <!-- course-meta-end -->
-                             </div>                                    
-                         </div>
-                          <!-- class-img -->
-                          <!-- schedule -->
-                         <ul class="schedule">
-                                 <li>
-                                     <span>Age:</span>
-                                     <span class="class-age">5-10 Years</span>
-                                 </li>
-                                 <li>
-                                     <span>Time:</span>
-                                     <span class="class-size">8-10am</span>
-                                 </li>
-                                 <li>
-                                     <span>Class Size:</span>
-                                     <span class="class-size">28</span>
-                                 </li>
-                                 <li>
-                                     <span>Fee:</span>
-                                     <span class="class-size">$50</span>
-                                 </li>
-                             </ul>
-                          <!-- schedule-end -->
-                          <!-- class-content -->
-                         <div class="class-content">
-                             
-                             <h4 class="title"><a href="single-courses.html">Digital Marketing Class</a></h4>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea.</p>                                     
-                         </div>
-                        <!-- class-content-end -->
-                     </div>
-                      <!-- class-item-end -->
-                 </div>                             
-             </div>
+                @foreach ($courses as $course)
+                    <div class="col-lg-4 col-md-6">
+                        <!-- class-item -->
+                        <div class="class-item mb-30">
+                            <!-- class-img -->
+                            <div class="class-img">
+                                <div class="class-img-outer">
+                                    <a href="single-courses.html">
+                                        <img src="/site/img/class/class-7.jpg" alt="class image">
+                                    </a>
+                                    <!-- course-meta -->
+                                    <div class="course-meta">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-8">
+                                                <div class="author">
+                                                    <div class="thumb">
+                                                        {{-- <img src="/site/img/bg/testi_avatar.png" alt="image"> --}}
+                                                        <img src="{{ $course->teacher_avatar ? asset('storage/' . $course->teacher_avatar) : '/site/img/bg/default-avatar.png' }}" alt="teacher avatar">
+                                                    </div>
+                                                    <div class="text">
+                                                        <a href="single-courses.html">{{ $course->teacher_name }}</a>
+                                                        <p>{{ $course->teacher_title }}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img src="/site/img/bg/star.png" alt="image">
+                                                <span>{{ $course->rating }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- course-meta-end -->
+                                </div>
+                            </div>
+                            <!-- class-img -->
+                            <!-- schedule -->
+                            <ul class="schedule">
+                                <li>
+                                    <span>Age:</span>
+                                    <span class="class-age">{{ $course->age_group }}</span>
+                                </li>
+                                <li>
+                                    <span>Time:</span>
+                                    <span class="class-size">{{ $course->time }}</span>
+                                </li>
+                                <li>
+                                    <span>Class Size:</span>
+                                    <span class="class-size">{{ $course->class_size }}</span>
+                                </li>
+                                <li>
+                                    <span>Fee:</span>
+                                    <span class="class-size">${{ $course->fee }}</span>
+                                </li>
+                            </ul>
+                            <!-- schedule-end -->
+                            <!-- class-content -->
+                            <div class="class-content">
+                                <h4 class="title"><a href="single-courses.html">{{ $course->course_title }}</a></h4>
+                                <p>{{ $course->description }}</p>
+                            </div>
+                            <!-- class-content-end -->
+                        </div>
+                        <!-- class-item-end -->
+                    </div>
+                @endforeach
+            </div>
+            
              <div class="row">
              <div class="col-12">
                  <div class="pagination-wrap mt-20 text-center">

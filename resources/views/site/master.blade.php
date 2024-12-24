@@ -3,26 +3,30 @@
     
 <!-- Mirrored from htmldemo.zcubethemes.com/qeducato/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:14:49 GMT -->
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Qeducato - University and College HTML Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="/site/image/x-icon" href="/site/img/favicon.ico">
-        <!-- Place favicon.ico in the root directory -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Qeducato - University and College HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/site/img/favicon.ico">
+    <!-- Place favicon.ico in the root directory -->
 
-		<!-- CSS here -->
-        <link rel="stylesheet" href="/site/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/site/css/animate.min.css">
-        <link rel="stylesheet" href="/site/css/magnific-popup.css">
-        <link rel="stylesheet" href="fontawesome//site/css/all.min.css">
-        <link rel="stylesheet" href="/site/css/dripicons.css">
-        <link rel="stylesheet" href="/site/css/slick.css">
-        <link rel="stylesheet" href="/site/css/meanmenu.css">
-        <link rel="stylesheet" href="/site/css/default.css">
-        <link rel="stylesheet" href="/site/css/style.css">
-        <link rel="stylesheet" href="/site/css/responsive.css">
-    </head>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/site/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/site/css/animate.min.css">
+    <link rel="stylesheet" href="/site/css/magnific-popup.css">
+    <link rel="stylesheet" href="/site/css/all.min.css">
+    <link rel="stylesheet" href="/site/css/dripicons.css">
+    <link rel="stylesheet" href="/site/css/slick.css">
+    <link rel="stylesheet" href="/site/css/meanmenu.css">
+    <link rel="stylesheet" href="/site/css/default.css">
+    <link rel="stylesheet" href="/site/css/style.css">
+    <link rel="stylesheet" href="/site/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+</head>
+
     <body>
         <!-- header -->
         <header class="header-area header-three">  
@@ -95,7 +99,7 @@
                                             <li><a href="{{ route('about') }}">Giới thiệu</a></li>        
                                             
                                               <li class="has-sub">
-                                               <a href="courses.html">Thông tin</a>
+                                               <a href="{{ route('courses') }}">Thông tin</a>
                                                 <ul>													
 								
 													<li> <a href="{{ route('courses') }}">Thông tin chung </a></li>
@@ -300,25 +304,26 @@
         <!-- footer-end -->
 
 		<!-- /site/js/ here -->
-        <script src="/site/js/vendor/modernizr-3.5.0.min./site/js/"></script>
-        <script src="/site/js/vendor/jquery-3.6.0.min./site/js/"></script>
-        <script src="/site/js/popper.min./site/js/"></script>
-        <script src="/site/js/bootstrap.min./site/js/"></script>
-        <script src="/site/js/slick.min./site/js/"></script>
-        <script src="/site/js/ajax-form./site/js/"></script>
-        <script src="/site/js/paroller./site/js/"></script>
-        <script src="/site/js/wow.min./site/js/"></script>
-        <script src="/site/js/site/js/_isotope.pkgd.min./site/js/"></script>
-        <script src="/site/js/imagesloaded.min./site/js/"></script>
-        <script src="/site/js/parallax.min.html"></script>
-        <script src="/site/js/jquery.waypoints.min./site/js/"></script>
-        <script src="/site/js/jquery.counterup.min./site/js/"></script>
-        <script src="/site/js/jquery.scrollUp.min./site/js/"></script>
-        <script src="/site/js/jquery.meanmenu.min./site/js/"></script>
-        <script src="/site/js/parallax-scroll./site/js/"></script>
-        <script src="/site/js/jquery.magnific-popup.min./site/js/"></script>
-        <script src="/site/js/element-in-view./site/js/"></script>
-        <script src="/site/js/main./site/js/"></script>
+        <script src="/site/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="/site/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="/site/js/popper.min.js"></script>
+        <script src="/site/js/bootstrap.min.js"></script>
+        <script src="/site/js/slick.min.js"></script>
+        <script src="/site/js/ajax-form.js"></script>
+        <script src="/site/js/paroller.js"></script>
+        <script src="/site/js/wow.min.js"></script>
+        <script src="/site/js/isotope.pkgd.min.js"></script>
+        <script src="/site/js/imagesloaded.min.js"></script>
+        <script src="/site/js/parallax.min.js"></script>
+        <script src="/site/js/jquery.waypoints.min.js"></script>
+        <script src="/site/js/jquery.counterup.min.js"></script>
+        <script src="/site/js/jquery.scrollUp.min.js"></script>
+        <script src="/site/js/jquery.meanmenu.min.js"></script>
+        <script src="/site/js/parallax-scroll.js"></script>
+        <script src="/site/js/jquery.magnific-popup.min.js"></script>
+        <script src="/site/js/element-in-view.js"></script>
+        <script src="/site/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
 <!-- Mirrored from htmldemo.zcubethemes.com/qeducato/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:16:35 GMT -->

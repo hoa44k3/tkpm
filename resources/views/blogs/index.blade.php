@@ -17,7 +17,7 @@
                         <th>Hình ảnh</th>
                         <th>Thẻ</th>
                         <th>Mô tả</th>
-                        <th>Comment</th> <!-- Thêm cột Comment -->
+                        <th>Comment</th> 
                         <th>Danh mục</th>
                         <th>Trạng thái</th>
                         <th>Lượt xem</th>
@@ -39,7 +39,14 @@
                                 @endforeach
                             </td>
                             <td>{{ $blog->description }}</td>
-                            <td>{{ $blog->comment ?? 'Chưa có bình luận' }}</td> <!-- Hiển thị comment -->
+                            <td>
+                                @forelse ($blog->comments as $comment)
+                                    <p>{{ $comment->content }}</p>
+                                @empty
+                                    <p>Chưa có bình luận</p>
+                                @endforelse
+                            </td>
+                            
                             <td>{{ $blog->category ? $blog->category->name : 'Chưa phân loại' }}</td>
                             <td>{{ ucfirst($blog->status) }}</td>
                             <td>{{ $blog->view_count }}</td>

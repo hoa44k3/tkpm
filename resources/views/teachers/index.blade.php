@@ -44,6 +44,9 @@
                         @endif
                     </td>
                     <td>
+                        <a href="{{ route('teachers.show', $teacher->id) }}" class="btn btn-info btn-sm" title="Xem chi tiết">
+                            <i class="fas fa-eye"></i>
+                        </a>
                         <a href="{{ route('teachers.edit', $teacher->id) }}" class="btn btn-warning">Sửa</a>
                         <form action="{{ route('teachers.destroy', $teacher->id) }}" method="POST" style="display:inline;">
                             @csrf

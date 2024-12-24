@@ -15,6 +15,11 @@ class Blog extends Model
     {
         return $this->hasMany(Tag::class, 'blog_id');
     }
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+    
 
     public function category()
     {

@@ -17,9 +17,17 @@ class Classes extends Model
         'age_group',
         'time',
         'class_size',
+        'teacher_id',
         'fee',
+        'teacher_name',
+        'location',
+        'image',
     ];
 
     // Nếu bạn không muốn sử dụng timestamps tự động (created_at, updated_at), bỏ dòng sau
     public $timestamps = true;
+    public function teacher()
+    {
+        return $this->belongsTo(Teacher::class);
+    }
 }

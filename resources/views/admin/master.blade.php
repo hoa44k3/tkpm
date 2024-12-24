@@ -124,6 +124,18 @@
                   <p>Teacher</p>
                 </a>
               </li>
+              <li class="nav-item {{ request()->routeIs('event.*') ? 'active' : '' }}">
+                <a href="{{ route('events.index') }}">
+                  <i class="fas fa-layer-group"></i>
+                  <p>Event</p>
+                </a>
+              </li>
+              <li class="nav-item {{ request()->routeIs('faq.*') ? 'active' : '' }}">
+                <a href="{{ route('faqs.index') }}">
+                  <i class="fas fa-layer-group"></i>
+                  <p>FAQ</p>
+                </a>
+              </li>
               <li class="nav-item {{ request()->routeIs('review.*') ? 'active' : '' }}">
                 <a href="{{ route('reviews.index') }}">
                   <i class="fas fa-layer-group"></i>
