@@ -149,6 +149,9 @@ Route::group(['prefix' => ''], function() {
     Route::get('/team', [HomeController::class, 'team'])->name('team');
     Route::get('/teamdetail', [HomeController::class, 'teamdetail'])->name('teamdetail');
     Route::get('/courses', [HomeController::class, 'courses'])->name('courses');
-    Route::get('/coursesdetail', [HomeController::class, 'coursesdetail'])->name('coursesdetail');
+    Route::get('/event', [HomeController::class,'event'])-> name('event');
+    Route::get('/event/{id}', [HomeController::class, 'eventdetail'])->name('event.detail');
+    Route::get('/courses/{id}', [HomeController::class, 'coursesdetail'])->name('course.detail');
     Route::post('/contact/store', [HomeController::class, 'storeContact'])->name('contact.store');
+    Route::get('/class/{id}', [HomeController::class, 'classdetail'])->name('class.detail');
 });

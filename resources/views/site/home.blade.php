@@ -163,50 +163,18 @@
                  </div>
              </div>
              <div class="row justify-content-center">
-                 {{-- <div class="col-xl-4 col-lg-4 col-md-6">
-                     <div class="class-item mb-30 hover-zoomin">
-                         <div class="class-img">
-                             <div class="class-img-outer">
-                                <a href="single-courses.html"> <img src="/site/img/class/class-1.jpg" alt="class image"></a>
-                             </div>                                    
-                         </div>
-                         <div class="class-content">
-                             <h4 class="title"><a href="single-courses.html">Languge Class</a></h4>
-                             <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea.</p>
-                              <ul class="schedule">
-                                 <li>
-                                     <span>Age:</span>
-                                     <span class="class-age">5-10 Years</span>
-                                 </li>
-                                 <li>
-                                     <span>Time:</span>
-                                     <span class="class-size">8-10am</span>
-                                 </li>
-                                 <li>
-                                     <span>Class Size:</span>
-                                     <span class="class-size">28</span>
-                                 </li>
-                                 <li>
-                                     <span>Fee:</span>
-                                     <span class="class-size">$50</span>
-                                 </li>
-                             </ul>
-                         </div>
-                        
-                     </div>
-                 </div> --}}
                         @foreach($classes as $class)
                         <div class="col-xl-4 col-lg-4 col-md-6">
                             <div class="class-item mb-30 hover-zoomin">
                                 <div class="class-img">
                                     <div class="class-img-outer">
-                                        <a href="{{ route('classes.show', $class->id) }}">
+                                        <a href="{{ route('class.detail', ['id' => $class->id]) }}">
                                             <img src="{{ asset('storage/' . $class->image) }}" alt="{{ $class->class_name }}">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="class-content">
-                                    <h4 class="title"><a href="{{ route('classes.show', $class->id) }}">{{ $class->class_name }}</a></h4>
+                                    <h4 class="title"><a href="{{ route('class.detail', ['id' => $class->id]) }}">{{ $class->class_name }}</a></h4>
                                     <p>{{ \Illuminate\Support\Str::words($class->description, 15, '...') }}</p>
                                     <ul class="schedule">
                                         <li>

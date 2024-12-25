@@ -92,25 +92,14 @@
                                 <div class="main-menu text-right text-xl-right">
                                     <nav id="mobile-menu">
                                           <ul>
-                                            <li class="has-sub">
-                                                <a href="{{ route('home') }}">Trang chủ</a>
-                                                
-                                            </li>
+                                            <li class="has-sub"><a href="{{ route('home') }}">Trang chủ</a></li>
                                             <li><a href="{{ route('about') }}">Giới thiệu</a></li>        
                                             
-                                              <li class="has-sub">
-                                               <a href="{{ route('courses') }}">Thông tin</a>
-                                                <ul>													
-								
-													<li> <a href="{{ route('courses') }}">Thông tin chung </a></li>
-                                                    <li> <a href="{{ route('coursesdetail') }}">Chi tiết thông tin</a></li>
-                                                   
-												</ul>
-                                            </li>  
+                                            <li class="has-sub"><a href="{{ route('courses') }}">Khóa học</a></li>  
                                               <li class="has-sub"><a href="#">Dịch vụ gia sư</a>
 												<ul>
-                                                    <li><a href="event.html">Khóa học</a></li>
-                                                    <li><a href="single-event.html">Chi tiết khóa học</a></li>
+                                                    <li><a href="{{route('event')}}">Sự kiện</a></li>
+                                                    <li><a href="single-event.html">Chi tiết sự kiện</a></li>
                                                     {{-- <li><a href="projects.html">Gallery</a></li> --}}
                                                     <li><a href="pricing.html">Học phí</a></li>
                                                     <li><a href="faq.html">Câu hỏi</a></li>

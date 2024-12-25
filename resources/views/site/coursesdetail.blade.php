@@ -11,18 +11,12 @@
                  <div class="col-xl-12 col-lg-12">
                      <div class="breadcrumb-wrap text-left">
                          <div class="breadcrumb-title">
-                             <h2>Chi tiết thông tin</h2>  
+                             <h2>Chi tiết khóa học</h2>  
                          </div>
                      </div>
                  </div>
                  <div class="breadcrumb-wrap2">
-                       
-                         <nav aria-label="breadcrumb">
-                             <ol class="breadcrumb">
-                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                 <li class="breadcrumb-item active" aria-current="page">Course Details</li>
-                             </ol>
-                         </nav>
+
                      </div>
                  
              </div>

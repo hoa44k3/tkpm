@@ -14,6 +14,10 @@
                 <input type="text" name="teacher_name" id="teacher_name" class="form-control" required>
             </div>
             <div class="form-group">
+                <label for="teacher_avatar">Ảnh Đại Diện Giáo Viên</label>
+                <input type="file" name="teacher_avatar" id="teacher_avatar" class="form-control" accept="image/*">
+            </div>
+            <div class="form-group">
                 <label for="teacher_title">Chức danh</label>
                 <input type="text" name="teacher_title" id="teacher_title" class="form-control" required>
             </div>
@@ -49,7 +53,10 @@
                 <label for="location">Địa điểm học</label>
                 <input type="text" class="form-control" id="location" name="location" value="{{ old('location', $course->location ?? '') }}" placeholder="Nhập địa điểm học">
             </div>
-            
+            <div class="form-group">
+                <label for="background_image">Ảnh Nền</label>
+                <input type="file" name="background_image" id="background_image" class="form-control" accept="image/*">
+            </div>
             <button type="submit" class="btn btn-primary">Thêm</button>
         </form>
     </div>

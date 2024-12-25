@@ -18,12 +18,6 @@
                  </div>
                  <div class="breadcrumb-wrap2">
                        
-                         <nav aria-label="breadcrumb">
-                             <ol class="breadcrumb">
-                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                 <li class="breadcrumb-item active" aria-current="page">Courses Two</li>
-                             </ol>
-                         </nav>
                      </div>
                  
              </div>
@@ -106,7 +100,7 @@
                             <!-- schedule-end -->
                             <!-- class-content -->
                             <div class="class-content">
-                                <h4 class="title"><a href="single-courses.html">{{ $course->course_title }}</a></h4>
+                                <h4 class="title"><a href="{{ route('course.detail', ['id' => $course->id]) }}">{{ $course->course_title }}</a></h4>
                                 <p>{{ $course->description }}</p>
                             </div>
                             <!-- class-content-end -->

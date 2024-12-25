@@ -10,6 +10,8 @@ use App\Models\Event;
 use App\Models\Contact;
 use App\Models\Faq;
 use App\Models\Courses;
+use Illuminate\Support\Facades\DB;
+
 class HomeController extends Controller
 {
     public function index()
@@ -52,28 +54,43 @@ class HomeController extends Controller
         $courses = Courses::all(); // Lấy tất cả các khóa học
         return view('site.courses', compact('courses'));
     }
-    public function coursesdetail(){
-        return view('site.coursesdetail');
+    public function coursesdetail($id){
+        $course = Courses::findOrFail($id);
+        return view('site.coursesdetail', compact('course'));
+    }
+    public function event(){
+        $events = DB::table('events')->orderBy('event_date', 'asc')->get();
+        return view('site.event', ['events' => $events]);
+    }
+    public function eventdetail($id)
+    {
+        $event = Event::findOrFail($id);
+        return view('site.eventdetail', compact('event'));
+    }
+    public function classdetail($id)
+    {
+        $class = Classes::findOrFail($id);
+        return view('site.classdetail', compact('class'));
     }
     public function storeContact(Request $request)
-{
-    // Xác thực dữ liệu từ form
-    $validated = $request->validate([
-        'firstn' => 'required|string|max:255',
-        'email' => 'required|email|max:255',
-        'phone' => 'nullable|string|max:20',
-        'message' => 'required|string',
-    ]);
+    {
+        // Xác thực dữ liệu từ form
+        $validated = $request->validate([
+            'firstn' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'nullable|string|max:20',
+            'message' => 'required|string',
+        ]);
 
-    // Lưu dữ liệu vào bảng contacts
-    Contact::create([
-        'name' => $validated['firstn'],
-        'email' => $validated['email'],
-        'phone' => $validated['phone'],
-        'message' => $validated['message'],
-    ]);
+        // Lưu dữ liệu vào bảng contacts
+        Contact::create([
+            'name' => $validated['firstn'],
+            'email' => $validated['email'],
+            'phone' => $validated['phone'],
+            'message' => $validated['message'],
+        ]);
 
-    // Có thể trả về thông báo hoặc chuyển hướng
-    return redirect()->route('about')->with('success', 'Your message has been sent successfully!');
-}
+        // Có thể trả về thông báo hoặc chuyển hướng
+        return redirect()->route('about')->with('success', 'Your message has been sent successfully!');
+    }
 }

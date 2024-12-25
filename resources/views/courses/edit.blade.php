@@ -15,6 +15,13 @@
                 <input type="text" name="teacher_name" id="teacher_name" value="{{ $course->teacher_name }}" class="form-control" required>
             </div>
             <div class="form-group">
+                <label for="teacher_avatar">Ảnh Đại Diện Giáo Viên</label>
+                <input type="file" name="teacher_avatar" id="teacher_avatar" class="form-control" accept="image/*">
+                @if($course->teacher_avatar)
+                    <img src="{{ asset('storage/' . $course->teacher_avatar) }}" alt="Avatar" style="width: 50px; height: 50px; object-fit: cover;">
+                @endif
+            </div>
+            <div class="form-group">
                 <label for="teacher_title">Chức danh</label>
                 <input type="text" name="teacher_title" id="teacher_title" value="{{ $course->teacher_title }}" class="form-control" required>
             </div>
@@ -50,7 +57,13 @@
                 <label for="location">Địa điểm học</label>
                 <input type="text" class="form-control" id="location" name="location" value="{{ old('location', $course->location ?? '') }}" placeholder="Nhập địa điểm học">
             </div>
-            
+            <div class="form-group">
+                <label for="background_image">Ảnh Nền</label>
+                <input type="file" name="background_image" id="background_image" class="form-control" accept="image/*">
+                @if($course->background_image)
+                    <img src="{{ asset('storage/' . $course->background_image) }}" alt="Background Image" style="width: 50px; height: 50px; object-fit: cover;">
+                @endif
+            </div>
             <button type="submit" class="btn btn-primary">Cập nhật</button>
         </form>
     </div>
