@@ -10,7 +10,7 @@ class CoursesController extends Controller
 {
     public function index()
     {
-        $courses = Courses::all(); // Lấy tất cả khóa học
+        $courses = Courses::all(); 
         foreach ($courses as $course) {
             $averageRating = $course->reviews()->avg('rating');
             $course->average_rating = $averageRating ?: 'Chưa đánh giá';
@@ -36,14 +36,14 @@ class CoursesController extends Controller
             'description' => 'required|string',
             'rating' => 'nullable|numeric',
             'location' => 'required|string|max:255',
-            'teacher_avatar' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048', // Kiểm tra ảnh đại diện
-            'background_image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048', // Kiểm tra ảnh nền
+            'teacher_avatar' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048', 
+            'background_image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048', 
         ]);
         
         // Xử lý ảnh đại diện
         $teacherAvatar = null;
         if ($request->hasFile('teacher_avatar')) {
-            $teacherAvatar = $request->file('teacher_avatar')->store('avatars', 'public');
+            $teacherAvatar = $request->file('teacher_avatar')->store('teacheravatars', 'public');
         }
 
         // Xử lý ảnh nền
@@ -64,8 +64,8 @@ class CoursesController extends Controller
             'description' => $request->description,
             'rating' => $request->rating,
             'location' => $request->location,
-            'teacher_avatar' => $teacherAvatar,
-            'background_image' => $backgroundImage,
+           'teacher_avatar' => $teacherAvatar, 
+             'background_image' => $backgroundImage, 
         ]);
 
         return redirect()->route('courses.index')->with('success', 'Course added successfully.');
@@ -102,7 +102,7 @@ class CoursesController extends Controller
             if ($course->teacher_avatar) {
                 Storage::disk('public')->delete($course->teacher_avatar);
             }
-            $course->teacher_avatar = $request->file('teacher_avatar')->store('avatars', 'public');
+            $course->teacher_avatar = $request->file('teacher_avatar')->store('teacheravatars', 'public');
         }
 
         // Xử lý ảnh nền
@@ -126,6 +126,10 @@ class CoursesController extends Controller
             'description' => $request->description,
             'rating' => $request->rating,
             'location' => $request->location,
+            // 'teacher_avatar' => $request->teacherAvatar,
+            // 'background_image' => $request->backgroundImage,
+           'teacher_avatar' => $course->teacher_avatar, // Sửa lại
+            'background_image' => $course->background_image,
         ]);
 
         return redirect()->route('courses.index')->with('success', 'Course updated successfully.');

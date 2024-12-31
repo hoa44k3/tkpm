@@ -36,11 +36,8 @@
                             <td>{{ $course->id }}</td>
                             <td>{{ $course->teacher_name }}</td>
                             <td>
-                                @if($course->teacher_avatar)
-                                    <img src="{{ asset('storage/' . $course->teacher_avatar) }}" alt="Avatar" style="width: 50px; height: 50px; object-fit: cover;">
-                                @else
-                                    <img src="{{ asset('assets/img/default-avatar.jpg') }}" alt="Default Avatar" style="width: 50px; height: 50px; object-fit: cover;">
-                                @endif
+                                <img src="{{ asset('storage/' . $course->teacher_avatar) }}" alt="{{ $course->teacher_avatar }}" style="width: 50px; height: 50px; object-fit: cover;">
+
                             </td>
                             <td>{{ $course->teacher_title }}</td>
                             <td>{{ $course->age_group }}</td>
@@ -52,11 +49,9 @@
                             <td>{{ $course->rating }}</td>
                             <td>{{ $course->location }}</td> 
                             <td>
-                                @if($course->background_image)
+                               
                                     <img src="{{ asset('storage/' . $course->background_image) }}" alt="Background Image" style="width: 50px; height: 50px; object-fit: cover;">
-                                @else
-                                    <img src="{{ asset('assets/img/default-background.jpg') }}" alt="Default Background" style="width: 50px; height: 50px; object-fit: cover;">
-                                @endif
+                               
                             </td>
                             <td>{{ $course->created_at->format('d/m/Y') }}</td>
                             <td>
@@ -76,20 +71,24 @@
 @section('scripts')
 <script>
     $('.delete-course').on('click', function() {
-        var courseId = $(this).data('id');
-        if (confirm('Bạn có chắc chắn muốn xóa khóa học này?')) {
-            $.ajax({
-                url: '/courses/' + courseId,
-                type: 'DELETE',
-                data: {
-                    "_token": "{{ csrf_token() }}",
-                },
-                success: function(response) {
-                    alert(response.success);
-                    location.reload();
-                }
-            });
-        }
-    });
+    var courseId = $(this).data('id');
+    if (confirm('Bạn có chắc chắn muốn xóa khóa học này?')) {
+        $.ajax({
+            url: "{{ url('/courses') }}/" + courseId,
+            type: 'DELETE',
+            data: {
+                "_token": "{{ csrf_token() }}",
+            },
+            success: function(response) {
+                alert(response.success);
+                location.reload();
+            },
+            error: function(xhr) {
+                alert('Có lỗi xảy ra, vui lòng thử lại.');
+            }
+        });
+    }
+});
+
 </script>
 @endsection

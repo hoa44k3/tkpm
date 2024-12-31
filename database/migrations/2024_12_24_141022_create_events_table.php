@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
+            $table->text('target_audience'); // Thêm trường thuộc đối tượng
+            $table->text('content');         // Thêm trường nội dung
             $table->date('event_date');
             $table->time('start_time');
             $table->time('end_time');

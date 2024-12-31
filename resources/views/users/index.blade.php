@@ -27,9 +27,10 @@
                         <tr id="user-{{ $user->id }}">
                             <td>{{ $user->id }}</td>
                             <td>
-                            
-                                <img src="{{ $user->avatar ? asset('storage/' . $user->avatar) : asset('assets/img/default-avatar.jpg') }}" alt="User Image" style="width: 50px; height: 50px; object-fit: cover;"> 
-                            </td>
+                                <img src="{{ asset('storage/' . $user->avatar) }}" alt="{{ $user->avatar }}" width="100px">
+                                {{-- <img src="{{ $user->avatar ? asset('storage' . $user->avatar) : asset('storage/img/default-avatar.jpg') }}" alt="User Image" style="width: 50px; height: 50px; object-fit: cover;"> 
+                            </td> --}}
+                            </tb>
                             
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>

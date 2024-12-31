@@ -9,6 +9,7 @@ class EventController extends Controller
     public function index()
     {
         $events = Event::all();
+        
         return view('events.index', compact('events'));
     }
 
@@ -24,6 +25,8 @@ class EventController extends Controller
         $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
+            'target_audience' => 'required|string',
+            'content' => 'required|string',
             'event_date' => 'required|date',
             'start_time' => 'required|date_format:H:i',
             'end_time' => 'required|date_format:H:i',
@@ -34,6 +37,8 @@ class EventController extends Controller
         $event = new Event();
         $event->title = $request->title;
         $event->description = $request->description;
+        $event->target_audience = $request->target_audience;
+        $event->content = $request->content;
         $event->event_date = $request->event_date;
         $event->start_time = $request->start_time;
         $event->end_time = $request->end_time;
@@ -61,6 +66,8 @@ class EventController extends Controller
     $request->validate([
         'title' => 'required|string|max:255',
         'description' => 'required|string',
+        'target_audience' => 'required|string',
+        'content' => 'required|string',
         'event_date' => 'required|date',
         'start_time' => 'required|date_format:H:i',
         'end_time' => 'required|date_format:H:i',
@@ -71,6 +78,8 @@ class EventController extends Controller
     $event = Event::findOrFail($id);
     $event->title = $request->title;
     $event->description = $request->description;
+    $event->target_audience = $request->target_audience;
+    $event->content = $request->content;
     $event->event_date = $request->event_date;
     $event->start_time = $request->start_time;
     $event->end_time = $request->end_time;
@@ -94,5 +103,10 @@ class EventController extends Controller
         $event->delete();
 
         return redirect()->route('events.index')->with('success', 'Sự kiện đã được xóa');
+    }
+    public function show($id)
+    {
+        $event = Event::findOrFail($id);
+        return view('events.show', compact('event'));
     }
 }

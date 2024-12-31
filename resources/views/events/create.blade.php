@@ -30,6 +30,16 @@
                 <input type="text" class="form-control" id="location" name="location" required>
             </div>
             <div class="form-group">
+                <label for="target_audience">Thuộc đối tượng</label>
+                <textarea class="form-control" id="target_audience" name="target_audience" required></textarea>
+            </div>
+
+            <!-- Nội dung -->
+            <div class="form-group">
+                <label for="content">Nội dung</label>
+                <textarea class="form-control" id="content" name="content" required></textarea>
+            </div>
+            <div class="form-group">
                 <label for="image_url">Ảnh minh họa</label>
                 <input type="file" class="form-control" id="image_url" name="image_url">
             </div>

@@ -38,18 +38,13 @@
             <div class="form-group">
                 <label for="start_time">Thời gian bắt đầu</label>
                 <input type="time" class="form-control" id="start_time" name="start_time" value="{{ old('start_time', $event->start_time) }}" required>
-                {{-- @error('start_time')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror --}}
+               
             </div>
 
             <!-- Thời gian kết thúc -->
             <div class="form-group">
                 <label for="end_time">Thời gian kết thúc</label>
                 <input type="time" class="form-control" id="end_time" name="end_time" value="{{ old('end_time', $event->end_time) }}" required>
-                {{-- @error('end_time')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror --}}
             </div>
 
             <!-- Địa điểm -->
@@ -60,7 +55,23 @@
                     <div class="text-danger">{{ $message }}</div>
                 @enderror
             </div>
+            
+            <div class="form-group">
+                <label for="target_audience">Thuộc đối tượng</label>
+                <textarea class="form-control" id="target_audience" name="target_audience" required>{{ old('target_audience', $event->target_audience) }}</textarea>
+                @error('target_audience')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
+            </div>
 
+            <!-- Nội dung -->
+            <div class="form-group">
+                <label for="content">Nội dung</label>
+                <textarea class="form-control" id="content" name="content" required>{{ old('content', $event->content) }}</textarea>
+                @error('content')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
+            </div>
             <!-- Ảnh minh họa -->
             <div class="form-group">
                 <label for="image_url">Ảnh minh họa</label>
